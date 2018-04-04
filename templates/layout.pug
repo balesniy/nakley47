@@ -1,0 +1,98 @@
+doctype html
+html
+
+  head
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous")
+    title Первая поклеечная области
+  body
+    .container
+      include messages
+      .row
+        .col
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium atque autem delectus distinctio dolor ducimus exercitationem, expedita facilis mollitia qui quibusdam quis repellendus sed sint tenetur totam vero voluptatem!
+        .col
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cum cupiditate est ex fugit impedit labore laudantium molestias officia optio perferendis, possimus saepe sed sequi totam ullam veniam vitae voluptatem!
+        .col
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. A beatae dolore enim hic iure laboriosam libero necessitatibus non quam, quod quos sequi tempora vero voluptates voluptatibus. Consectetur culpa explicabo optio.
+      .row
+        .col
+          img.img-fluid.rounded.mx-auto.d-block(src='/1_Primary_logo_on_transparent_419x63.png', alt='Responsive image')
+      p.lead Участники
+        span.badge.badge-pill.badge-success 268
+      .row
+        .col
+          #carouselExampleSlidesThree.carousel.slide(data-ride='carousel')
+            .carousel-inner
+              .carousel-item.active
+                img.d-block.w-100(src='http://img03.platesmania.com/180325/m/11120715.jpg', alt='First slide')
+              .carousel-item
+                img.d-block.w-100(src='http://img03.platesmania.com/180325/m/11120633.jpg', alt='Second slide')
+              .carousel-item
+                img.d-block.w-100(src='http://img03.platesmania.com/180324/m/11118999.jpg', alt='Third slide')
+        .col
+          #carouselExampleSlidesTwo.carousel.slide(data-ride='carousel')
+            .carousel-inner
+              .carousel-item.active
+                img.d-block.w-100(src='http://img03.platesmania.com/180324/m/11119054.jpg', alt='First slide')
+              .carousel-item
+                img.d-block.w-100(src='http://img03.platesmania.com/180325/m/11119562.jpg', alt='Second slide')
+              .carousel-item
+                img.d-block.w-100(src='http://img03.platesmania.com/180325/m/11119564.jpg', alt='Third slide')
+        .col
+          #carouselExampleSlidesOne.carousel.slide(data-ride='carousel')
+            .carousel-inner
+              .carousel-item.active
+                img.d-block.w-100(src='http://img03.platesmania.com/180325/m/11119583.jpg', alt='First slide')
+              .carousel-item
+                img.d-block.w-100(src='http://img03.platesmania.com/180325/m/11119666.jpg', alt='Second slide')
+              .carousel-item
+                img.d-block.w-100(src='http://img03.platesmania.com/180325/m/11120199.jpg', alt='Third slide')
+      block content
+      .container-fluid
+        .row
+          .col
+            h2 Как к нам добраться
+            img.img-fluid.mx-auto.d-block(src='https://static-maps.yandex.ru/1.x/?ll=33.847675,59.473572&pt=33.88,59.89,round&l=map&size=650,450')
+      .container
+        .row
+          .col
+            h3 Они уже с нами
+        .row
+          .col
+            img.img-thumbnail(src='/зубы.jpeg', alt='...')
+          .col
+            img.img-thumbnail(src='/молоко.gif', alt='...')
+          .col
+            img.img-thumbnail(src='/штаб.jpg', alt='...')
+      .jumbotron.jumbotron-fluid
+        .container
+          h1.display-4 Рекламодателю:
+          p.lead
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur enim ipsam minus molestias, obcaecati quia rem tempore voluptate. Ad amet deleniti explicabo iusto libero natus quod recusandae repellendus saepe unde?
+    // Optional JavaScript
+    // jQuery first, then Popper.js, then Bootstrap JS
+    script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q', crossorigin='anonymous')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl', crossorigin='anonymous')
+    .container
+      address
+        strong Twitter, Inc.
+        br
+        |     1355 Market St, Suite 900
+        br
+        |     San Francisco, CA 94103
+        br
+        abbr(title='Phone') P:
+        |  (123) 456-7890
+      address
+        strong Full Name
+        br
+        a(href='mailto:#') first.last@example.com
+      .container
+        h3.display-4 Всякая важная юридическая информация:
+        blockquote.blockquote.text-right
+          p.mb-0
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus accusantium aliquid animi, aperiam commodi, corporis ea facere impedit in ipsum labore necessitatibus nobis officiis possimus qui ut? At autem commodi doloribus incidunt magni, quibusdam quo sint? Autem doloremque fugit non quos! Adipisci dolor eligendi eos est harum nihil nisi quasi quis. Debitis facere fugiat iusto sunt totam! Aliquam assumenda cum dolor doloremque error expedita fugiat id illum laboriosam maiores, nihil rerum sint tempora? Beatae, delectus deleniti, dolores ducimus eveniet ipsa labore molestias neque nesciunt obcaecati quia ratione rerum sequi ut, vitae? Ad delectus enim eos explicabo, impedit in, labore laboriosam laudantium nisi nobis obcaecati placeat praesentium repellendus sed ullam ut voluptate. Dolore eveniet id impedit, laborum tenetur voluptatem voluptates. Dignissimos dolores id minima molestiae nihil quibusdam sunt, voluptatem voluptatum? Cumque, error, saepe? Ad architecto consequuntur culpa dignissimos eaque ex exercitationem, explicabo, facilis in itaque maiores maxime molestias mollitia nam nobis odio officia omnis perferendis praesentium quas qui quo recusandae reiciendis reprehenderit saepe suscipit tempora tempore temporibus unde velit veniam vero voluptas voluptate! Accusantium aut consectetur debitis dolore, enim eum explicabo labore magni nemo non nostrum nulla numquam odit, reiciendis ullam unde vero voluptatibus. Culpa error inventore maxime nihil nisi?
+          footer.blockquote-footer
+            | Someone famous in
+            cite(title='Source Title') Source Title

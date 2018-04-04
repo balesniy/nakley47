@@ -1,0 +1,65 @@
+extends layout
+
+block content
+
+  form(action="/login" method="post")
+    h3 Расскажите о себе
+    .form-group
+      label(for="name") Фамилия Имя Отчество
+      input.form-control(type="text" id="name" name="name" placeholder="Иванов Василий Петрович" required autofocus)
+    .form-group
+      label(for="address") Адрес проживания
+      input.form-control(type="text" id="address" name="address" placeholder="Пикалево, Ленина ул. д 1 кв 1" required)
+
+    .form-group
+      label(for="auto") Марка и модель авто
+      input.form-control(type="text" id="auto" name="auto" placeholder="Хонда Цивик" required)
+      button.btn.btn-primary.form-inline(type='button') Подтвердить
+    .input-group.mb-3
+      .input-group-prepend
+        span.input-group-text Загрузить фото
+      .custom-file
+        input#inputGroupFile01.custom-file-input(type='file')
+        label.custom-file-label(for='inputGroupFile01')
+
+    .form-group
+      label(for="email") Email
+      input.form-control(type="email" id="email" name="email" placeholder="my@mail.com" required)
+      button.btn.btn-primary.form-inline(type='button') Подтвердить
+    .form-group
+      label(for="tel") Телефон
+      input.form-control(type="tel" id="tel" name="tel" placeholder="+79999999" required)
+      button.btn.btn-primary.form-inline(type='button') Подтвердить
+    .form-group
+      label(for="doc") Номер паспорта
+      input.form-control(type="number" id="doc" name="doc" placeholder="1234567890" required)
+      button.btn.btn-primary.form-inline(type='button') Проверить
+    .form-group
+      label(for="inn") ИНН
+      input.form-control(type="number" id="inn" name="inn" placeholder="123456789012" required)
+      button.btn.btn-primary.form-inline(type='button') Узнать в налоговой
+    .form-group
+      label(for="yad") Номер Яндекс кошелька
+      input.form-control(type="number" id="yad" name="yad" placeholder="123456789012" required)
+    .form-group
+      label(for="password") Придумайте пароль
+      input.form-control(type="password" id="password" name="password" placeholder="8sGUqAG0hj" required)
+      input(type="hidden" name="_csrf" value=csrf)
+    .jumbotron
+      h1.display-4 Еще раз, самые важные условия:
+      p.lead
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid delectus excepturi explicabo maiores modi mollitia nemo officia optio quam qui quisquam recusandae reprehenderit saepe sapiente similique, sint sit sunt suscipit.
+      hr.my-4
+      p
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, commodi, nihil. Aperiam corporis ea earum impedit iste modi nam odio perferendis porro provident, quibusdam quos reprehenderit sint temporibus unde ut?
+      hr.my-4
+      p
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet aspernatur consequatur dolores eum illum labore numquam! At dicta doloribus eos id ipsum laboriosam, laudantium minus obcaecati quas repellat sequi?
+      p.lead
+        a.btn.btn-primary.btn-lg(href='#', role='button') Я все прочитал, понял и согласен
+        .custom-control.custom-checkbox
+          input#customCheck1.custom-control-input(type='checkbox')
+          label.custom-control-label(for='customCheck1') И я не робот
+
+
+    button.btn.btn-lg.btn-primary.btn-block(type="submit") Регистрируйте меня
